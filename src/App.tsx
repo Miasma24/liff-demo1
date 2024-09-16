@@ -1,5 +1,5 @@
 import liff from "@line/liff";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 
 function App() {
   const [userName, setUserName] = useState("名無し");
@@ -7,21 +7,16 @@ function App() {
   useEffect(() => {
     liff
       .init({
-        liffId: import.meta.env.VITE_LIFF_ID,
+        liffId: process.env.VITE_LIFF_ID || "",
         withLoginOnExternalBrowser: true,
       })
       .then(() => {
         console.log("init");
-        liff
-          .getProfile()
-          .then((profile) => {
-            console.log("get profile");
-            setIsLoggedIn(liff.isLoggedIn());
-            setUserName(profile.displayName);
-          })
-          .catch(() => {
-            console.log("get profile failed");
-          });
+        liff.getProfile().then((profile) => {
+          console.log("get profile");
+          setIsLoggedIn(liff.isLoggedIn());
+          setUserName(profile.displayName);
+        }).catch(() => { console.log("get profile failed"); });
       })
       .catch(() => {
         console.log("init failed");
