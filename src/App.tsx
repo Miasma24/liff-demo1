@@ -1,6 +1,7 @@
 import liff from "@line/liff";
 import React, { useEffect, useState } from 'react';
 import "./App.css";
+import TreasureChest from "../images/sozai_image_103600.png";
 
 function App() {
   const [userName, setUserName] = useState("名無し");
@@ -62,8 +63,8 @@ function App() {
         ))
       ) : (
         <img
-          src={images[selectedImage]}
-          alt={`selected-image`}
+          src={TreasureChest}
+          alt="../images/sozai_image_103600.png"
           className="image"
           style={{ width: `${size}px`, height: `${size}px` }}
         />
