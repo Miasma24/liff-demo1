@@ -59,7 +59,11 @@ function App() {
             alt="../images/sozai_image_103600.png"
             className="image"
             onClick={() => handleClick(index)}
-            style={{ cursor: "pointer" }}
+            style={{
+              cursor: "pointer",
+              width: 100,
+              height: 100
+            }}
           />
         ))
       ) : (
