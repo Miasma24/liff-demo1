@@ -1,7 +1,8 @@
 import liff from "@line/liff";
 import React, { useEffect, useState } from 'react';
 import "./App.css";
-import TreasureChest from "../images/sozai_image_103600.png";
+import TreasureChestClosed from "../images/sozai_image_103600.png";
+import TreasureChestOpened from "../images/sozai_image_103598.png";
 
 function App() {
   const [userName, setUserName] = useState("名無し");
@@ -54,8 +55,8 @@ function App() {
         images.map((src, index) => (
           <img
             key={index}
-            src={src}
-            alt={`image-${index}`}
+            src={TreasureChestClosed}
+            alt="../images/sozai_image_103600.png"
             className="image"
             onClick={() => handleClick(index)}
             style={{ cursor: "pointer" }}
@@ -63,8 +64,8 @@ function App() {
         ))
       ) : (
         <img
-          src={TreasureChest}
-          alt="../images/sozai_image_103600.png"
+          src={TreasureChestOpened}
+          alt="../images/sozai_image_103598.png"
           className="image"
           style={{ width: `${size}px`, height: `${size}px` }}
         />
