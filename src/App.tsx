@@ -47,7 +47,7 @@ function App() {
   const checkUserToken = async (idToken: string | null) => {
     if (!idToken) return;
     try {
-      const response = await fetch("https://samplegame1.onrender.com/check-token", {
+      const response = await fetch("https://samplegame1.onrender.com/webhook", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
