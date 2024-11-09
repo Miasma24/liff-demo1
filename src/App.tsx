@@ -154,19 +154,15 @@ function App() {
                 <div>
                   <center>
                     {atarihazure ? (
-                      <strong>
-                        <p>
-                          あたり！<br />
-                          クーポン獲得！
-                        </p>
-                      </strong>
+                      <div>
+                        あたり！<br />
+                        クーポン獲得！
+                      </div>
                     ) : (
-                      <strong>
-                        <p>
-                          はずれ！<br />
-                          また明日挑戦してね！
-                        </p>
-                      </strong>
+                      <div>
+                        はずれ！<br />
+                        また明日挑戦してね！
+                      </div>
                     )}
                     <button className="button" onClick={() => window.close()}>戻る</button>
                   </center>
