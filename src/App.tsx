@@ -151,7 +151,7 @@ function App() {
                   </div>
                 ))
               ) : isAnimEnd ? (
-                <div className="atarihazureText">
+                <div>
                   <center>
                     {atarihazure ? (
                       <strong>
