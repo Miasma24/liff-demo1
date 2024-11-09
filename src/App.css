@@ -30,11 +30,12 @@
 
 .atarihazureText {
   font-size: 35px;
-  margin: 50vh 100px;
+  /*margin: 50vh 100px;*/
+  margin: 10% 100px;
 }
 
 .BG {
-  width: 80%;
+  width: 85%;
   height: 800px;
 
   /* 背景画像を表示 */
