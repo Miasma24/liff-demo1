@@ -168,7 +168,7 @@ function App() {
                         </p>
                       </strong>
                     )}
-                    <button onClick={() => window.close()}>戻る</button>
+                    <button className="button" onClick={() => window.close()}>戻る</button>
                   </center>
                 </div>
               ) : (
