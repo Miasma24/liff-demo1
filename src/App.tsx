@@ -114,9 +114,10 @@ function App() {
     }, 100);
   };
 
+  //{isMobile ? "BG mobile" : "BG pc}>
   return (
     <div>
-      <div className={isMobile ? "BG mobile" : "BG pc"}>
+      <div className="BG">
         <div className="atarihazureText">
           {alreadyOpened ? (
             <center>
