@@ -118,7 +118,7 @@ function App() {
   return (
     <div>
       <div className="BG">
-        <div className="atarihazureText">
+        <div className="atarihazureText2">
           {alreadyOpened ? (
             <center>
               <p>またきてね！</p>
